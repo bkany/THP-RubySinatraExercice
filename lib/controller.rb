@@ -16,10 +16,7 @@ class ApplicationController < Sinatra::Base
 	end
 	
 	get '/gossips/:id' do
-  	#"Hello #{params['id']}!"
-  	#"#{Gossip.find(params['id']).author}"
-  	#"#{Gossip.find(params['id'].to_i).content}"
-  	erb :show
+		erb :show
 	end
 
 end
