@@ -16,11 +16,10 @@ class ApplicationController < Sinatra::Base
 	end
 	
 	get '/gossips/:id' do
-  	# matches "GET /hello/foo" and "GET /hello/bar"
-  	# params['name'] is 'foo' or 'bar'
-  	"Hello #{params['id']}!"
-  	"#{Gossip.find(id).author}"
-  	"#{Gossip.find(id).content}"
+  	#"Hello #{params['id']}!"
+  	#"#{Gossip.find(params['id']).author}"
+  	#"#{Gossip.find(params['id'].to_i).content}"
+  	erb :show
 	end
 
 end
